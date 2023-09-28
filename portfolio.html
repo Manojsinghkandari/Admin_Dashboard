@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Performance | Portfolio</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+        <style>
+            .center {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+            }
+
+            canvas {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <aside class="left">
+                <div class="top">
+                    <div class="logo">
+                        <img src="./assets/vegan.png" alt="Vegan Dashboard" />
+                        <h2>Vegan</h2>
+                    </div>
+                    <div class="close close-btn">
+                        <span class="material-icons-sharp"> close </span>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <ul>
+                        <li>
+                            <a href="./index.html" class="active">
+                                <span class="material-icons-sharp"> grid_view </span>
+                                <h4>Dashboard</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html">
+                                <span class="material-icons-sharp">
+                                    data_usage
+                                </span>
+                                <h4>Performance</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons-sharp"> person </span>
+                                <h4>Customers</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons-sharp"> receipt_long </span>
+                                <h4>Orders</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons-sharp"> analytics </span>
+                                <h4>Analytics</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons-sharp"> chat </span>
+                                <h4>Messages</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons-sharp"> inventory </span>
+                                <h4>Products</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons-sharp"> settings </span>
+                                <h4>Settings</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons-sharp"> add </span>
+                                <h4>Add Product</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons-sharp"> logout </span>
+                                <h4>Logout</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="center">
+                <canvas width="450px" height="450px" id="canvas-1"></canvas>
+                <canvas width="450px" height="450px" id="canvas-2"></canvas>
+                <canvas width="450px" height="450px" id="canvas-3"></canvas>
+                <canvas width="450px" height="450px" id="canvas-4"></canvas>
+            </main>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./js/chart.js"></script>
+    </body>
+
+</html>

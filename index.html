@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - LetsUpgrade JS Project #1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <aside class="left">
+        <div class="top">
+          <div class="logo">
+            <img src="./assets/vegan.png" alt="Vegan Dashboard" />
+            <h2>Vegan</h2>
+          </div>
+          <div class="close close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a href="./index.html" class="active">
+                <span class="material-icons-sharp"> grid_view </span>
+                <h4>Dashboard</h4>
+              </a>
+            </li>
+            <li>
+              <a href="./portfolio.html">
+                <span class="material-icons-sharp"> data_usage </span>
+                <h4>Performance</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons-sharp"> person </span>
+                <h4>Customers</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons-sharp"> receipt_long </span>
+                <h4>Orders</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons-sharp"> analytics </span>
+                <h4>Analytics</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons-sharp"> chat </span>
+                <h4>Messages</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons-sharp"> inventory </span>
+                <h4>Products</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons-sharp"> settings </span>
+                <h4>Settings</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons-sharp"> add </span>
+                <h4>Add Product</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons-sharp"> logout </span>
+                <h4>Logout</h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="center">
+        <h1>Dashboard</h1>
+        <div class="date">
+          <input type="date" />
+        </div>
+        <div class="insights">
+          <div class="sales">
+            <span class="material-icons-sharp"> analytics </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Sales</h3>
+                <h1>$25,000</h1>
+              </div>
+              <div class="progress">
+                <span class="material-icons-sharp"> show_chart </span>
+              </div>
+            </div>
+            <small class="text-muted"> Last 24 Hours </small>
+          </div>
+          <div class="expenses">
+            <span class="material-icons-sharp"> analytics </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Expenses</h3>
+                <h1>$25,000</h1>
+              </div>
+              <div class="progress">
+                <span class="material-icons-sharp"> show_chart </span>
+              </div>
+            </div>
+            <small class="text-muted"> Last 24 Hours </small>
+          </div>
+          <div class="income">
+            <span class="material-icons-sharp"> analytics </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Income</h3>
+                <h1>$25,000</h1>
+              </div>
+              <div class="progress">
+                <span class="material-icons-sharp"> show_chart </span>
+              </div>
+            </div>
+            <small class="text-muted"> Last 24 Hours </small>
+          </div>
+        </div>
+        <div class="recent-orders">
+          <h2>Recent Orders</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Number</th>
+                <th>Payment Status</th>
+                <th>Delivery Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </main>
+      <aside class="right">
+        <div class="top">
+          <button class="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-icons-sharp active"> light_mode </span>
+            <span class="material-icons-sharp"> dark_mode </span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>manoj</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="./assets/profile.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+        </div>
+        <div class="sales-analytics">
+          <h2>Sales Analytics</h2>
+          <div class="sales-card">
+            <span class="material-icons-sharp"> shopping_cart </span>
+            <div class="message">
+              <p>
+                <b>Online Orders</b>
+              </p>
+              <small class="text-muted">5 Minutes Ago</small>
+            </div>
+            <div class="percentage">
+              <p>+40%</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/orders.js"></script>
+    <script src="./js/updates.js"></script>
+  </body>
+</html>
